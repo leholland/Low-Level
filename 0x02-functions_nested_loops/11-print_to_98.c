@@ -7,29 +7,47 @@
  */
 void print_to_98(int n)
 {
-int i, k;
-int product;
-int ones, tens;
-
-for (i = 0; i < 10; i++)
+int i;
+if (n < 99) 
 {
-for (k = 0; k < 10; k++)
+for (i = n; i < 99; i++)
 {
-product = i * k;
-if (product > 9)
+if (i > 9)
 {
-ones = product % 10 + '0';
-tens = (product / 10) % 10 + '0';
-putchar(tens);
-putchar(ones);
+putchar((i / 10) % 10 + '0');
+putchar(i % 10 + '0');
 }
 else
 {
-putchar(product + '0');
+putchar(i + '0');
 }
+if (i != 98)
+{
 putchar(',');
 putchar(' ');
 }
-putchar('\n');
+}
+}
+else
+{
+for (i = n; i > 97; i--)
+{
+if (i > 99)
+{
+putchar((i / 100) % 10 + '0');
+putchar((i / 10) % 10 + '0');
+putchar(i % 10 + '0');
+}
+else
+{
+putchar((i / 10) % 10 + '0');
+putchar(i % 10 + '0');
+}
+if (i != 98)
+{
+putchar(',');
+putchar(' ');
+}
+}
 }
 }
