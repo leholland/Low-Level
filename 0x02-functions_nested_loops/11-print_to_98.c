@@ -3,6 +3,7 @@
 
 /**
 * print_to_98  - prints natural numbers from n to 98
+* @n: int to start the loop
 *
 */
 void print_to_98(int n)
