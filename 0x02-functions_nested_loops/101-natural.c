@@ -3,6 +3,7 @@
 /**
 * main - void
 * @void: blank
+* Return: 0
 */
 
 int main(void)
