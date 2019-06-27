@@ -10,7 +10,8 @@ int main(void)
 long a, b, c;
 a = 0;
 b = 1;
-for (int i = 0 ; i < 49; i++)
+int i;
+for (i = 0 ; i < 49; i++)
 {
 c = a + b;
 printf("%ld, ", c);
