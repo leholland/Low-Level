@@ -2,7 +2,7 @@
 
 /**
 * main - Displays numbers from 0 to 100 and "FizzBuzz",
-"Fizz", or "Buzz" for multiples of 3,5, or both
+* "Fizz", or "Buzz" for multiples of 3,5, or both
 *
 * Return: 0
 */
