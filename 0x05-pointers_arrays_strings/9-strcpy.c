@@ -13,7 +13,7 @@ int counter, i;
 
 counter = 0;
 
-while(src[counter] != '\0')
+while (src[counter] != '\0')
 counter++;
 for (i = 0; i < counter; i++)
 dest[i] = src[i];
