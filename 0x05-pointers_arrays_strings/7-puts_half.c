@@ -20,10 +20,9 @@ if (str_len % 2 == 0)
 {
 half_start = str_len / 2;
 }
-
 else
 {
-half_start = (str_len - 1) / 2;
+half_start = (str_len + 1) / 2;
 }
 
 for (i = half_start ; str[i] != '\0' ; i++)
