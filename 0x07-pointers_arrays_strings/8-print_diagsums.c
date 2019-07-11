@@ -3,8 +3,8 @@
 
 /**
 * print_diagsums - sums of two diags of square matrix of integers
-*@a:
-*@size: Size o
+*@a: array of numbers
+*@size: Size of array
 */
 
 void print_diagsums(int *a, int size)
