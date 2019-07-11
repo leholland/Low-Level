@@ -3,13 +3,13 @@
 
 /**
 * print_diagsums - sums of two diags of square matrix of integers
-*@a: 
+*@a:
 *@size: Size o
 */
 
 void print_diagsums(int *a, int size)
 {
-int sum_1 = 0; 
+int sum_1 = 0;
 int start_1 = 0;
 int end_1 = size;
 
