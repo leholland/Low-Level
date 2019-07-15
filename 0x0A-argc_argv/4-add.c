@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
 * main - Sums numbers
@@ -9,30 +8,34 @@
 * Return: return sum of integer arguments
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 int i;
+int k;
 int sum = 0;
 
-if (argc == 1)
+for (i = 1; i < argc; i++)
 {
-printf("0\n");
-return (0);
+if (!(argv[i][0] >= '0' && argv[i][0] <= '9')
+&& argv[i][0] != '-')
+{
+printf("Error\n");
+return (1);
 }
-
-for (i = 1 ; i < argc ; i++)
+for (k = 1; argv[i][k] != 0; k++)
 {
-if (isdigit(*argv[i]))
-{
-sum += atoi(argv[i]);
-}
-else
+if (argv[i][k] < '0' || argv[i][k] > '9')
 {
 printf("Error\n");
 return (1);
 }
 }
-
+}
+for (i = 1; i < argc; i++)
+{
+sum += atoi(argv[i]);
+}
 printf("%d\n", sum);
+
 return (0);
 }
