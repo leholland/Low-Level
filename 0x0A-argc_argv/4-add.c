@@ -22,7 +22,7 @@ return (0);
 
 for (i = 1 ; i < argc ; i++)
 {
-if (isdigit(*argv[i]) && atoi(argv[i]) != 0)
+if (isdigit(*argv[i]))
 {
 sum += atoi(argv[i]);
 }
