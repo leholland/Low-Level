@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 int i;
 int sum = 0;
 
-if (argc < 1)
+if (argc == 1)
 {
 printf("0\n");
 return (0);
@@ -22,7 +22,7 @@ return (0);
 
 for (i = 1 ; i < argc ; i++)
 {
-if (isdigit(*argv[i]) && atoi(argv[i]) > 0)
+if (isdigit(*argv[i]))
 {
 sum += atoi(argv[i]);
 }
