@@ -1,18 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-/**
-* _isdigit - Checks to see if is digit 0-9
-*
-* @c: integer to check for digit
-* Return: 0 or 1.
-*/
-
-int _isdigit(int c)
-{
-return (c >= '0' && c <= '9');
-}
-
+#include <ctype.h>
 
 /**
 * main - Sums numbers
@@ -34,7 +22,7 @@ return (0);
 
 for (i = 1 ; i < argc ; i++)
 {
-if (_isdigit(*argv[i]) && argv[i] != '0')
+if (isdigit(*argv[i]))
 {
 sum += atoi(argv[i]);
 }
