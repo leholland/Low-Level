@@ -22,7 +22,7 @@ return (NULL);
 }
 
 i = 0;
-while (i < size)
+while (i < size + 1)
 {
 arr[i] = c;
 i++;
