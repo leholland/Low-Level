@@ -12,21 +12,22 @@
 char *create_array(unsigned int size, char c)
 {
 
-unsigned int i;
-char *arr;
+unsigned int i = 0;
+char *ptr;
 
-arr = malloc((size + 1) * sizeof(char));
-if (arr == NULL || size == 0)
+if (size == 0)
 {
 return (NULL);
 }
-
-i = 0;
-while (i < size + 1)
+ptr = malloc(size * sizeof(char));
+if (ptr == NULL)
 {
-arr[i] = c;
+return (NULL);
+}
+while (i < size)
+{
+ptr[i] = c;
 i++;
 }
-arr[i] = '\0';
-return (arr);
+return (ptr);
 }
