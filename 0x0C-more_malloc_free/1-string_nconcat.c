@@ -53,11 +53,11 @@ if (s3 == NULL)
 {
 return (NULL);
 }
-for (i = 0; s1[i] !='\0'; i++)
+for (i = 0; s1[i] != '\0'; i++)
 {
 s3[i] = s1[i];
 }
-for (j = 0; j < n; j++)
+for (j = 0; j < n && s2 != '\0'; j++)
 {
 s3[i + j] = s2[j];
 }
