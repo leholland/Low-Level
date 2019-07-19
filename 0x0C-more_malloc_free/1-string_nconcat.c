@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
+/**
 * _strlen - Counts length of string
 *@s: string to pass
 * Return: 0
@@ -18,7 +18,7 @@ i++;
 
 return (i);
 }
-/*
+/**
 * string_nconcat - Concats two strings
 *@s1: First string to add
 *@s2: Second string to add
@@ -46,7 +46,7 @@ size1 = _strlen(s1);
 size2 = n;
 
 if (n >= size2)
-s3 = malloc(sizeof(char) * (size1 + size2) + 1);
+s3 = malloc(sizeof(char) * (size1 + size2 + 1));
 else
 s3 = malloc(sizeof(char) * (size1 + n + 1));
 if (s3 == NULL)
