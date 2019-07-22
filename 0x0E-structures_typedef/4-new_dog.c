@@ -27,7 +27,7 @@ new->name = malloc(sizeof(char) * (d_name + 1));
 if (new->name == NULL)
 {
 free(new);
-return(NULL);
+return (NULL);
 }
 
 new->owner = malloc(sizeof(char) * (o_name + 1));
@@ -35,14 +35,14 @@ if (new->owner == NULL)
 {
 free(new);
 free(new->name);
-return(NULL);
+return (NULL);
 }
 
 for (i = 0; i <= d_name; i++)
 new->name[i] = name[i];
 
 new->age = age;
-for(i = 0; i <= o_name; i++)
+for (i = 0; i <= o_name; i++)
 new->owner[i] = owner[i];
 return (new);
 }
