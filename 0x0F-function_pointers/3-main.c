@@ -39,5 +39,5 @@ exit(99);
 
 result = get_op_func(argv[2])(a, b);
 printf("%d\n", result);
-return(0);
+return (0);
 }
