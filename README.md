@@ -1,5 +1,5 @@
 This directory contains C projects
-# low_level_programming
+# Low Level Programming
 New commands / functions used:
 gcc, printf(3), puts, putchar
 Objectives:
