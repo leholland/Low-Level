@@ -1,10 +1,10 @@
 This directory contains C projects
-# holbertonschool-low_level_programming
+# low_level_programming
 New commands / functions used:
 gcc, printf(3), puts, putchar
 Objectives:
 
-    Why C programming is awesome (don’t forget to tweet today, with the hashtag #cisfun :))
+    Why C programming is awesome 
     Who invented C
     Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
     What happens when you type gcc main.c
